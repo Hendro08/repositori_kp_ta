@@ -1,59 +1,202 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# REPOSITORI DOKUMEN TUGAS AKHIR & KERJA PRAKTIK MAHASISWA D3 TI UKSW
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Sistem Repository KP & TA merupakan aplikasi berbasis web yang digunakan untuk membantu proses pengelolaan, pengumpulan, dan pemantauan dokumen Kerja Praktik (KP) dan Tugas Akhir (TA) mahasiswa.
 
-## About Laravel
+---
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## Project Overview
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+Project ini dikembangkan untuk meningkatkan efisiensi dalam proses pengumpulan dan pengelolaan dokumen Tugas Akhir (TA) dan Kerja Praktik (KP). Sistem menyediakan berbagai fitur yang membantu mahasiswa dan dosen D3 Teknik Informatika UKSW dalam mengelola dokumen akademik secara lebih terstruktur dan efisien.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+### Tujuan
 
-## Learning Laravel
+* Mempermudah mahasiswa D3 Teknik Informatika UKSW dalam mengumpulkan dokumen Tugas Akhir (TA) dan Kerja Praktik (KP).
+* Membantu dosen dalam mengelola dan memantau dokumen Tugas Akhir (TA) dan Kerja Praktik (KP) mahasiswa. 
+* Mempermudah proses pengecekan dokumen serta pemantauan status pengumpulan dokumen.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+---
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## Features
 
-## Laravel Sponsors
+* Authentication & Login
+* Pengumpulan dokumen
+* Status revisi
+* Notifikasi
+* History / riwayat submission
+* Pengelolaan Dokumen
+* Approval dokumen
+* Automatic Semester Detection
+* Pengelolaan pengguna
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+---
 
-### Premium Partners
+## Tech Stack
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+### Backend
 
-## Contributing
+* PHP
+* Laravel 
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+### Frontend
 
-## Code of Conduct
+* HTML
+* CSS
+* Bootstrap
+* JavaScript
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+### Database
 
-## Security Vulnerabilities
+* MySQL
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+### Tools
 
-## License
+* Visual Studio Code
+* XAMPP
+* phpMyAdmin
+* Git & GitHub
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+---
+
+## Screenshots
+
+
+### Guest - Landing Page
+
+![Landing Page](docs/screenshots/Guest/tampilan_awal_guest.png)
+Halaman ini merupakan tampilan awal website yang menyediakan akses untuk login ke sistem dan melihat dokumen abstrak yang sudah disetujui.
+
+### Guest - Daftar File Abstrak KP dan TA
+![Daftar File Abstrak](docs/screenshots/Guest/daftar_kp_ta_guest.png)
+Halaman ini merupakan halaman lanjutan dari Landing Page yang menampilkan daftar file abstrak Tugas Akhir (TA) dan Kerja Praktik (KP) mahasiswa yang sudah disetujui.
+
+### Guest - Login
+![Login](docs/screenshots/Guest/login.png)
+Halaman ini digunakan untuk masuk ke dalam sistem sebagai User (mahasiswa) atau Admin (dosen) sesuai dengan hak akses masing-masing.
+
+### User - Homepage
+![Homepage User](docs/screenshots/User/home.png)
+Halaman ini merupakan tampilan awal setelah User (mahasiswa) berhasil login. Pada halaman ini, User dapat memilih jenis dokumen yang akan dikumpulkan, yaitu Kerja Praktik (KP) atau Tugas Akhir (TA).
+
+### User - Form Pengumpulan Dokumen
+![Form Pengumpulan Dokumen](docs/screenshots/User/form_pengumpulan.png)
+Halaman ini digunakan oleh User (mahasiswa) untuk mengisi data terkait dokumen yang akan dikumpulkan. Formulir pengumpulan dokumen Tugas Akhir (TA) dan Kerja Praktik (KP) memiliki struktur yang serupa.
+
+### User - History Dokumen
+Halaman untuk melihat aktivitas User maupun Admin terkait dokumen yang sudah dikumpulkan. Terdapat 3 status yaitu Terkumpul, Revisi, dan Disetujui untuk menginformasikan ke user tentang progres dari dokumen yang sudah dikumpulkan
+
+### User - History Dokumen Status Terkumpul
+![History Dokumen Terkumpul](docs/screenshots/User/history_kumpul.png)
+
+### User - History Dokumen Status Revisi
+![History Dokumen Revisi](docs/screenshots/User/history_revisi.png)
+
+### User - History Dokumen Status Disetujui
+![History Dokumen Disetujui](docs/screenshots/User/history_disetujui.png)
+
+### User - Form Revisi Dokumen
+![Form Revisi Dokumen](docs/screenshots/User//form_revisi.png)
+Halaman ini digunakan untuk mengirimkan kembali dokumen atau mengubah data jika terdapat revisi
+
+### User - Dropdown Notification
+![Dropdown Notificatiom](docs/screenshots/User/dropdown_notif_logout.png)
+Tampilan ketika admin sudah mengubah status atau memberikan catatan untuk dokumen yang sudah dikumpulkan mahasiswa
+
+### User - Notification
+![Notification](docs/screenshots/User/notif.png)
+Halaman ini digunakan untuk melihat daftar notifikasi yang diterima User
+
+### Admin - Dashboard
+![Dashboard](docs/screenshots/Admin/branda_admin.png)
+Menampilkan jumlah dan statistik dokumen yang telah dikumpulkan mahasiswa untuk membantu admin memantau proses pengumpulan dokumen
+
+### Admin - Detail Mahasiswa Semester Ini
+![Mahasiswa Semester Ini](docs/screenshots/Admin/detail_mahasiswa_semesterini.png)
+Menampilkan daftar mahasiswa yang sudah mengumpulkan dokumen pada semester berjalan sekarang
+
+### Admin - Detail Mahasiswa Semua Semester
+![Mahasiswa Semua Semester](docs/screenshots/Admin/detail_mahasiswa_semua.png)
+Menampilkan daftar mahasiswa yang telah mengumpulkan dokumen tanpa dibatasi oleh periode atau semester tertentu
+
+### Admin - Daftar Data Dokumen Mahasiswa
+![Data Dokumen Mahasiswa](docs/screenshots/Admin/data_dokumen_mahasiswa.png)
+Menampilkan daftar data dokumen mahasiswa yang sudah dikumpulkan disertai search untuk memudahkan dalam mencari dokumen
+
+### Admin - Detail Dokumen Mahasiswa
+![Detail Dokumen Mahasiswa](docs/screenshots/Admin/detail_data_dokumen.png)
+Menampilkan detail dari dokumen mahasiswa. Disini Admin bisa mengubah status dan menambahkan catatan pada dokumen
+
+### Admin - Kelola User
+![Kelola User](docs/screenshots/Admin/kelola_user.png)
+
+---
+
+## Database
+
+Project ini menggunakan **MySQL** sebagai database.
+
+### Entity Relationship Diagram
+
+![ERD](docs/erd.png)
+
+### Database Structure
+
+Beberapa tabel utama yang digunakan antara lain:
+
+| Table            | Description                                                         |
+| ---------------- | ------------------------------------------------------------------- |
+| `users`          | Menyimpan data pengguna                                             |
+| `kerja_pratik`   | Menyimpan data pengumpulan dokumen kerja praktik                    |
+| `tugas_akhir`    | Menyimpan data pengumpulan dokumen tugas akhir                      |
+| `notification`   | Mengelola notifikasi terkait aktivitas dan perubahan status dokumen |
+| `submission_log` | Mencatat riwayat aktivitas pengumpulan dokumen KP/TA                |
+
+---
+
+## Testing
+
+Pengujian sistem dilakukan menggunakan metode **Black Box Testing** untuk memastikan fitur-fitur yang tersedia berjalan sesuai dengan kebutuhan sistem.
+
+[Tambahkan informasi tambahan mengenai testing jika ada.]
+
+---
+
+## My Contribution
+
+Dalam project ini saya berkontribusi dalam:
+
+* Merancang database
+* Mengembangkan backend menggunakan Laravel
+* Mengembangkan frontend
+* Membuat authentication
+* Mengembangkan fitur pengumpulan dokumen
+* Mengembangkan fitur Automatic Semester Detection
+* Mengembangkan fitur approval/revisi
+* Melakukan testing
+
+---
+
+## What I Learned
+
+Melalui project ini, saya mempelajari dan menerapkan:
+
+* Pengembangan aplikasi web menggunakan Laravel
+* Konsep MVC
+* Perancangan dan pengelolaan database relasional
+* Authentication dan authorization
+* Pengelolaan file/dokumen
+* Database migration
+* Git dan GitHub
+* Software testing menggunakan Black Box Testing
+
+---
+
+## Instalation
+
+
+---
+
+## Project Status
+
+**Completed**
+
+Project ini telah selesai dikembangkan dan digunakan sebagai bagian dari portfolio.
