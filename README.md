@@ -127,6 +127,7 @@ Menampilkan detail dari dokumen mahasiswa. Disini Admin bisa mengubah status dan
 
 ### Admin - Kelola User
 ![Kelola User](docs/screenshots/Admin/kelola_user.png)
+Halaman ini digunakan untuk mengelola data User. Admin bisa mencari, mengedit, dan menghapus User 
 
 ---
 
@@ -156,7 +157,49 @@ Beberapa tabel utama yang digunakan antara lain:
 
 Pengujian sistem dilakukan menggunakan metode **Black Box Testing** untuk memastikan fitur-fitur yang tersedia berjalan sesuai dengan kebutuhan sistem.
 
-[Tambahkan informasi tambahan mengenai testing jika ada.]
+### Black Box Testing – Guest
+
+| No. | Fitur yang Diuji       | Hasil Pengujian                                                  | Status   |
+| --- | ---------------------- | ---------------------------------------------------------------- | -------- |
+| 1   | List data file abstrak | Data abstrak berhasil ditampilkan                                | Berhasil |
+| 2   | Unduh file abstrak     | File abstrak berhasil diunduh                                    | Berhasil |
+| 3   | Login                  | User berhasil masuk sesuai hak akses                             | Berhasil |
+| 4   | Validasi login         | Sistem menampilkan peringatan ketika email/password tidak sesuai | Berhasil |
+| 5   | Registrasi             | Data pengguna berhasil disimpan                                  | Berhasil |
+| 6   | Validasi registrasi    | Sistem memberikan peringatan ketika form tidak lengkap           | Berhasil |
+| 7   | Lupa password          | Link reset password berhasil dikirim ke email                    | Berhasil |
+
+### Black Box Testing – User (Mahasiswa)
+
+| No. | Fitur yang Diuji          | Hasil Pengujian                                            | Status   |
+| --- | ------------------------- | ---------------------------------------------------------- | -------- |
+| 1   | Pengumpulan dokumen TA/KP | Form pengumpulan berhasil ditampilkan                      | Berhasil |
+| 2   | Submit dokumen TA/KP      | Data pengumpulan berhasil disimpan                         | Berhasil |
+| 3   | Validasi form pengumpulan | Form tidak dapat disubmit jika belum lengkap               | Berhasil |
+| 4   | Validasi ukuran file      | Sistem menolak file yang melebihi batas ukuran             | Berhasil |
+| 5   | History TA/KP             | Halaman history berhasil ditampilkan                       | Berhasil |
+| 6   | Melihat aktivitas dokumen | Data dokumen dan riwayat aktivitas berhasil ditampilkan    | Berhasil |
+| 7   | Edit dokumen              | Dokumen dengan status "Terkumpul" dapat diedit             | Berhasil |
+| 8   | Hapus dokumen             | Dokumen dengan status "Terkumpul" dapat dihapus            | Berhasil |
+| 9   | Revisi dokumen            | Halaman revisi berhasil ditampilkan ketika status "Revisi" | Berhasil |
+| 10  | Notifikasi                | Halaman notifikasi berhasil ditampilkan                    | Berhasil |
+| 11  | Detail notifikasi         | Notifikasi mengarahkan user ke history TA/KP terkait       | Berhasil |
+
+### Black Box Testing – Admin
+
+| No. | Fitur yang Diuji         | Hasil Pengujian                                                     | Status   |
+| --- | ------------------------ | ------------------------------------------------------------------- | -------- |
+| 1   | Dashboard                | Jumlah dokumen TA/KP berhasil ditampilkan                           | Berhasil |
+| 2   | Daftar mahasiswa         | Data mahasiswa yang telah mengumpulkan dokumen berhasil ditampilkan | Berhasil |
+| 3   | Filter "Semester Ini"    | Data mahasiswa sesuai periode semester berhasil ditampilkan         | Berhasil |
+| 4   | Data TA/KP               | Daftar dokumen TA/KP berhasil ditampilkan                           | Berhasil |
+| 5   | Hapus dokumen TA/KP      | Dokumen berhasil dihapus                                            | Berhasil |
+| 6   | Unduh dokumen TA/KP      | Dokumen berhasil diunduh                                            | Berhasil |
+| 7   | Review dokumen           | Halaman review dokumen berhasil ditampilkan                         | Berhasil |
+| 8   | Perubahan status dokumen | Status dokumen berhasil diperbarui                                  | Berhasil |
+| 9   | Kelola user              | Daftar user yang telah terdaftar berhasil ditampilkan               | Berhasil |
+| 10  | Edit user                | Data user berhasil diperbarui                                       | Berhasil |
+| 11  | Hapus user               | User berhasil dihapus                                               | Berhasil |
 
 ---
 
@@ -190,8 +233,35 @@ Melalui project ini, saya mempelajari dan menerapkan:
 
 ---
 
-## Instalation
+## Installation
+1. Clone Repositoriy
+- git clone https://github.com/Hendro08/repositori_kp_ta.git 
+- cd repositori_kp_ta
 
+2. Install dependency Laravel
+- composer install
+
+3. Copy .env.example menjadi .env
+- cp .env.example .env
+
+4. Buat database baru melalui phpMyAdmin
+
+5. Atur konfigurasi database pada file .env
+DB_DATABASE=nama_database
+DB_USERNAME=root
+DB_PASSWORD=
+
+6. Generate application key:
+- php artisan key:generate
+
+7. Jalankan migration dan seeder:
+- php artisan migrate --seed
+
+8. Jalankan aplikasi:
+- php artisan serve
+
+9. Buka aplikasi melalui:
+- http://127.0.0.1:8000
 
 ---
 
